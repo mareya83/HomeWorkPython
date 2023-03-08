@@ -26,7 +26,7 @@ while cycle:
                              adress = True
                         else:
                             adress = False
-                        counter = counter + 1
+                        counter += 1
 
                     if adress:
                         print("It's valid!")
