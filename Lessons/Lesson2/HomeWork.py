@@ -43,5 +43,6 @@ text =  """
 print(text.find("ad"))
 
 print((text[0:text.find("ad")]) + (text[text.find("ad")+len("ad"):-1]))
+# print(text.replace("ad", ""))
 
 print(text.replace("Lorem", "Hey you"))
