@@ -27,7 +27,7 @@ def data_of_user():
          return user
     else:
         print("Login must contain '@' and '.' or password  > 2  \n")
-        data_of_user()
+        
 
 
 def registratin():
@@ -36,8 +36,8 @@ def registratin():
     is_runing = True
     while is_runing:
         user = data_of_user()
-        
-        data_base.append(user)
+        if user != None:
+             data_base.append(user)
         is_runing = int(input("Would you like to create an account again?:  0 - Not, 1-Yes  "))
 
     return data_base
