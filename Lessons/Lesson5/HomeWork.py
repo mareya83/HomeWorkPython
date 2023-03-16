@@ -23,9 +23,10 @@ def menu():
 def data_of_user():
     user = {"Login" : input("Enter your login: "),
             "Password": input("Enter your password: ")}
-    if "@" "." in user["Login"] and user["Password"] > 2:
+    if "@" in user["Login"] and "." in user["Login"] and int(user["Password"]) > 2:
          return user
     else:
+        print("Login must contain '@' and '.' or password  > 2  \n")
         data_of_user()
 
 
@@ -34,8 +35,9 @@ def registratin():
     
     is_runing = True
     while is_runing:
-
-        data_base.append(data_of_user())
+        user = data_of_user()
+        
+        data_base.append(user)
         is_runing = int(input("Would you like to create an account again?:  0 - Not, 1-Yes  "))
 
     return data_base
