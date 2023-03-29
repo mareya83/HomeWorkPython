@@ -23,21 +23,21 @@
 
 #
 
-from menu import menu
+from Func.menu import menu
 
-from createStore import createStore
+from Func.createStore import createStore
 
-from printStore import printStore
+from Func.printStore import printStore
 
-from productByCategory import productByCategory
+from Func.productByCategory import productByCategory
 
-from userRegister import userRegister 
-from userBuyProduct import userBuyProduct
-from userShowBag import userShowBag
+from Func.userRegister import userRegister 
+from Func.userBuyProduct import userBuyProduct
+from Func.userShowBag import userShowBag
 
-from addProduct import addProduct
-from deleteProduct import deleteProduct
-from changeNameProduct import changeNameProduct
+from Func.addProduct import addProduct
+from Func.deleteProduct import deleteProduct
+from Func.changeNameProduct import changeNameProduct
 
 
 category = ['TV', 'Smartphone', 'Mp3', 'DvD']

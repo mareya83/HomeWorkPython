@@ -1,5 +1,5 @@
-from userAddMoney import userAddMoney 
-from variantChoose import variantChoose
+from Func.userAddMoney import userAddMoney 
+from Func.variantChoose import variantChoose
 
 
 def userBuyProduct(user, category, store):

@@ -1,5 +1,5 @@
 import random
-from exeptInt import exeptInt
+from Func.exeptInt import exeptInt
 
 def createProducts(label = None, price = None, desk = None):
     products = []
@@ -26,7 +26,7 @@ def createProducts(label = None, price = None, desk = None):
           else:
                exeptInt(price)
 
-          label = labels[random.randint(0, len(labels)-1)]        
+          label = random.choice(labels)        
 
           product = {'Label': label,
                'Price': price,

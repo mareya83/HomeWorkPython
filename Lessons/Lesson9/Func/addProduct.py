@@ -1,7 +1,7 @@
 
-from menu import menu
-from createProduct import createProduct
-from createProducts import createProducts
+from Func.menu import menu
+from Func.createProduct import createProduct
+from Func.createProducts import createProducts
 
 def addProduct(store, category):
     for i in range(len(category)):

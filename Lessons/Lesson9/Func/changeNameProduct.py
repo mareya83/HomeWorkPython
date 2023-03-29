@@ -1,5 +1,5 @@
 
-from variantChoose import variantChoose
+from Func.variantChoose import variantChoose
 
 def changeNameProduct(store, category):
     categoryChoose = variantChoose(category)

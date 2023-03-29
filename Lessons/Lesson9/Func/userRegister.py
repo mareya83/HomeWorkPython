@@ -1,4 +1,4 @@
-from userAddMoney import userAddMoney
+from Func.userAddMoney import userAddMoney
 
 def userRegister():
 

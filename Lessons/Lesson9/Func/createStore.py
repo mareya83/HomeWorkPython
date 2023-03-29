@@ -1,4 +1,4 @@
-from createProducts import createProducts
+from Func.createProducts import createProducts
 
 def createStore(category, label, price = None, desk = None ):
     store = []

@@ -1,5 +1,5 @@
-from productByCategory import productByCategory
-from exeptInt import exeptInt
+from Func.productByCategory import productByCategory
+from Func.exeptInt import exeptInt
 
 def deleteProduct(store, category):
     

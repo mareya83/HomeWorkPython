@@ -1,5 +1,5 @@
 
-from exeptInt import exeptInt
+from Func.exeptInt import exeptInt
 
 def createProduct(label, price, desk = None):
 
