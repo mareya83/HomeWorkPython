@@ -20,114 +20,14 @@
 
 # class Bag: bag = []
 
-import random
+
 from func_tools.menu import menu
 from func_tools.intMoney import intMoney
-
-
-
-class Store: 
-    def __init__(self, products):
-        self.products = products
-
-    def getStore (self):
-        return self.products
-
-    def showStore(self):
-        print ("Store")
-        for i in self.products:
-            print(i)
-
-        
-
-
-
-class Product:  
-    def __init__(self, label, price = 0):
-        self.price = price
-        self.label = label
-    
-    def getProduct(self):
-        return {"Label": self.label, "Price" : self.price}
-
-    def getProducts(self):
-        products = []
-        for i in self.label:
-            products.append(Product(random.choice(self.label), random.randint(100,4000)).getProduct())
-        return products
-
-    def getPrice(self):
-        return self.price
-
-
-
-class User:
-    
-    def __init__(self, name, wallet = 0, bag = []):
-        self.name = name
-        self.wallet = wallet
-        self.bag = bag
-
-    def showUser(self):
-        return {"Name": self.name, "Wallet": self.wallet, "Bag": self.bag}
-
-    def walletStatus(self):
-        return self.wallet
-
-    def bagStatus(self):
-        return self.bag
-
-    def addMoney(self, money):
-        self.money = money
-        self.wallet += self.money
-
-    def addBag(self, add_bag):
-        for i in add_bag:
-            self.bag.append(i.__dict__)
-        
-
-    def seyHello(self):
-        print("Hello from user")
-
-
-
-class Admin(User):
-    def __init__(self):
-        super().__init__(self)
-     
-    def seyHello(self):
-        print("Hello from admin")
-
-
-
-class Bag: 
-    def __init__(self, bag = []):
-        self.bag = bag
-
-    def addProdukt(self, product):
-        self.product = product
-        self.bag.append(self.product)
-
-    def getBag(self):
-        return self.bag
-
-
-class Сart: 
-    def __init__(self):
-        self.products = []   
-             
-    def getFullPrice(self, *args):
-        self.products = args
-        sum_products = 0
-        for i in args:
-            sum_products += i.getPrice()
-        return sum_products
-
-    def getCurt(self):
-        return self.products
-
-
-
+from Store.Store import Store
+from Store.Product import Product
+from Store.User import User, Admin
+from Store.Bag import Bag
+from Store.Cart import Сart
 
 
 labels = ["LG", "Samsung", "HUAWEI", "Apple", "Oppo", "Xiaomi"]
