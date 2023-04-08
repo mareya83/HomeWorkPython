@@ -12,7 +12,7 @@ skills = ["works", "promises to do everything", "says he's busy", "tells stories
 names = ["Bob", "Nik", "Jak"]
 
 class Run:
-    skills = ["works", "promises to do everything", "says he's busy", "tells stories"]
+    
     @staticmethod
     def Start():
         admin = Admin(random.choice(names), random.choice(skills))
